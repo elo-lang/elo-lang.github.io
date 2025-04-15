@@ -1,4 +1,4 @@
 # Elo Online
 Elo Programming Language Website.
 
-Visit at [marc-dantas.github.io/elo](https://marc-dantas.github.io/elo/)
+Visit at [elo-lang.github.io/elo](https://elo-lang.github.io/elo/)
