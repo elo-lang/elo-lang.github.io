@@ -15,8 +15,14 @@
 					<a class="navbar-item" href="index.html">
 						<img src="./assets/elo-icon-color.png" alt="Elo Icon">
 					</a>
+					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="nav">
+					    <span aria-hidden="true"></span>
+					    <span aria-hidden="true"></span>
+					    <span aria-hidden="true"></span>
+					    <span aria-hidden="true"></span>
+					</a>
 				</div>
-				<div class="navbar-menu">
+				<div id="nav" class="navbar-menu">
 					<div class="navbar-start">
 						<a class="navbar-item" href="learn.html">Learn Elo</a>
 					</div>
@@ -24,16 +30,22 @@
 			</nav>
 		</div>
 		<div class="hero-body">
-			<div class="columns is-centered is-vcentered">
-				<div class="column is-one-third">
-					<img src="./assets/elo-logo-improved-contrast.png" width="350px" alt="Elo Icon">
-					<p class="title">Building Software Intuitively</p>
+			<div class="columns container is-centered is-vcentered">
+				<div class="column is-half">
+					<div class="columns is-multiline">
+	     				<div class="column is-narrow">
+							<img src="./assets/elo-logo-improved-contrast.png" width="400px" alt="Elo Icon">
+	     				</div>
+	     				<div class="column is-narrow">
+							<p class="title">Building Software Intuitively</p>
+	     				</div>
+					</div>
 				</div>
-				<div class="column is-5">
-					<div class="box p-5">
+				<div class="column is-half is-hidden-mobile">
+					<div class="box p-6">
 						<div class="columns is-multiline is-centered">
 							<div class="column is-full">
-								<p class="subtitle is-size-4-desktop has-text-justified">
+								<p class="subtitle is-size-4-desktop has-text-justified-desktop">
 									Elo is a systems compiled programming language designed to allow developers enjoy software development
 									through a <strong>simple syntax</strong>, <strong>debloated standard library</strong> and an
 									<strong>intuitive experience</strong> in general.
@@ -50,7 +62,7 @@
 	</header>
 	<main class="hero is-black">
 		<div class="hero-body">
-			<section class="box container">
+			<section class="box p-6 container">
 				<h2 class="title is-2">The philosophy</h2>
 				<p class="is-size-4">
 					Modern programming languages, especially compiled ones, often come with
@@ -80,7 +92,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="box container">
+			<section class="box p-6 container">
 				<h2 class="title is-2">Development</h2>
 				<p class="subtitle">Elo is 100% free and open source.</p>
 				<hr>
@@ -110,6 +122,15 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+	    document.addEventListener('DOMContentLoaded', () => {
+	      const burger = document.querySelector('.navbar-burger');
+          burger.addEventListener('click', () => {
+            const navbar = document.getElementById(burger.dataset.target);
+            burger.classList.toggle('is-active');
+            navbar.classList.toggle('is-active');
+          });
+	    });
+	</script>
 </body>
-
 </html>
