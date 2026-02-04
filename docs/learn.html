@@ -18,7 +18,7 @@
 				</div>
 				<div class="navbar-menu">
 					<div class="navbar-start">
-						<a class="navbar-item" href="learn.html">Learn Elo</a>
+						<a class="navbar-item" href="learn.html">Learn</a>
 					</div>
 				</div>
 			</nav>
@@ -26,7 +26,7 @@
 		<div class="hero-body">
 			<div class="columns is-centered is-multiline">
 				<div class="column is-full has-text-centered">
-					<p class="title is-size-1"><b>Learn Elo</b> <sup>*</sup></p>
+					<p class="title is-size-1"><b>Learn</b></p>
 				</div>
 				<div class="column is-narrow">
 					<p class="subtitle">Discover ways to learn Elo Programming Language</p>
@@ -37,7 +37,7 @@
 	<main class="hero is-black">
 		<div class="hero-body">
 			<section class="box container">
-				<h2 class="title is-2">The <em>book</em> <sup>*</sup></h2>
+				<h2 class="title is-2">The <em>book</em></h2>
 				<p class="subtitle">Elo's full documentation and main learning resource.</p>
 				<hr>
 				<div class="content">
@@ -46,7 +46,7 @@
 				</div>
 			</section>
 			<section class="box container">
-				<h2 class="title is-2">The <em>tour</em> <sup>*</sup></h2>
+				<h2 class="title is-2">The <em>tour</em></h2>
 				<p class="subtitle">A beginner-friendly introduction to Elo Programming language with examples.</p>
 				<hr>
 				<div class="content">
@@ -60,8 +60,7 @@
 		<div class="hero-body">
 			<div class="columns is-multiline is-centered has-text-centered">
 				<div class="column is-full">
-					<p><small>Text marked with * mean that it is unfinished content</small></p>
-					<p class="is-size-4">&copy; 2025 <a href="https://github.com/igotfr">Igor Ferreira</a> <a
+					<p class="is-size-4">&copy; 2025 <a href="https://github.com/igotfr">Igor Ferreira</a>, <a
 							href="https://github.com/marc-dantas">Marcio Dantas</a></p>
 				</div>
 				<div class="column is-narrow">
@@ -72,6 +71,15 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+	    document.addEventListener('DOMContentLoaded', () => {
+	      const burger = document.querySelector('.navbar-burger');
+          burger.addEventListener('click', () => {
+            const navbar = document.getElementById(burger.dataset.target);
+            burger.classList.toggle('is-active');
+            navbar.classList.toggle('is-active');
+          });
+	    });
+	</script>
 </body>
-
 </html>
